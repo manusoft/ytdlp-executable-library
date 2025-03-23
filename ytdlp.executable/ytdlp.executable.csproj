@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
 	<AssemblyName>Ytdlp.executable</AssemblyName>
 	<RootNamespace>Yytdlp.executable</RootNamespace>
-	<PackageId>YTDLP-Executable</PackageId>
+	<PackageId>ytdlp-executable</PackageId>
 	<Description>A NuGet package that provides the latest version of `yt-dlp.exe`.</Description>
 	<Copyright>Copyright © 2025 ManuHub</Copyright>
 	<Authors>Manojbabu</Authors>
