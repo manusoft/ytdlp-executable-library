@@ -11,8 +11,8 @@
 	<Copyright>Copyright © 2025 ManuHub</Copyright>
 	<Authors>Manojbabu</Authors>
 	<PackageTags>yt-dlp;yt-dlp.exe;ytdlp;ytdlp.exe</PackageTags>
-	<PackageProjectUrl>https://github.com/yt-dlp/yt-dlp</PackageProjectUrl>
-	<RepositoryUrl>https://github.com/manusoft/yt-dlp-wrapper</RepositoryUrl>
+	<PackageProjectUrl>https://github.com/manusoft/ytdlp-executable-library</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/manusoft/ytdlp-executable-library</RepositoryUrl>
 	<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 	<Icon>icon.png</Icon>
 	<PackageIcon>icon.png</PackageIcon>
