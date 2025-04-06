@@ -12,12 +12,12 @@
 	<Authors>Manojbabu</Authors>
 	<PackageTags>yt-dlp;yt-dlp.exe;ytdlp;ytdlp.exe</PackageTags>
 	<PackageProjectUrl>https://github.com/manusoft/ytdlp-executable-library</PackageProjectUrl>
-	<RepositoryUrl>https://github.com/manusoft/ytdlp-executable-library</RepositoryUrl>
+	<RepositoryUrl>https://github.com/yt-dlp/yt-dlp</RepositoryUrl>
 	<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 	<Icon>icon.png</Icon>
 	<PackageIcon>icon.png</PackageIcon>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
-	<Version>2025.03.23</Version>
+	<Version>2025.3.31</Version>
 	<IsPackable>true</IsPackable>
 	<AotAssemblies>true</AotAssemblies>
   </PropertyGroup>
