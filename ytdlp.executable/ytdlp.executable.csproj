@@ -17,7 +17,7 @@
 	<Icon>icon.png</Icon>
 	<PackageIcon>icon.png</PackageIcon>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
-	<Version>2025.4.30</Version>
+	<Version>2025.5.22</Version>
 	<IsPackable>true</IsPackable>
 	<AotAssemblies>true</AotAssemblies>
   </PropertyGroup>
@@ -26,6 +26,8 @@
 	<Content Include="icon.png" Pack="true" PackagePath="" />
 	<Content Include="README.md" Pack="true" PackagePath="" />
 	<Content Include="LICENSE.txt" Pack="true" PackagePath="" />
-	<Content Include="Tools\yt-dlp.exe" Pack="true" PackageCopyToOutput="true" />
+	<Content Include="Tools\yt-dlp.exe" Pack="true" PackageCopyToOutput="true">
+	  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</Content>
   </ItemGroup>
 </Project>
