@@ -11,3 +11,6 @@
 
 ## File Path
 The file is copied to the output directory, and located at the relative path: ```Tools\yt-dlp.exe```
+
+## Supported Sites
+- [Thousands of sites](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md)
