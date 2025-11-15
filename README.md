@@ -2,7 +2,7 @@
 
 # ytdlp-executable
 
-**ytdlp-executable** is a NuGet package that includes the latest version of `yt-dlp.exe`. It is designed to complement the **ytdlp-executable** library or any other application that requires the `yt-dlp` executable for powerful media downloading capabilities.  
+**ytdlp-executable** is a NuGet package that includes the latest version of `yt-dlp.exe`. It is designed to complement the **ytdlp-executable** library and **Ytdlp.NET** library or any other application that requires the `yt-dlp` executable for powerful media downloading capabilities.  
 
 ## Features  
 - **Latest Version**: Always ships with the latest version of `yt-dlp.exe`.  
