@@ -9,7 +9,7 @@
 	<RootNamespace>Yytdlp.executable</RootNamespace>
 	<PackageId>ytdlp-executable</PackageId>
 	<Description>A NuGet package that provides the latest version of `yt-dlp.exe`.</Description>
-	<Copyright>Copyright © 2025 ManuHub</Copyright>
+	<Copyright>Copyright © 2026 ManuHub</Copyright>
 	<Authors>Manojbabu</Authors>
 	<PackageTags>yt-dlp;yt-dlp.exe;ytdlp;ytdlp.exe</PackageTags>
 	<PackageProjectUrl>https://github.com/yt-dlp/yt-dlp</PackageProjectUrl>
@@ -18,7 +18,7 @@
 	<Icon>icon.png</Icon>
 	<PackageIcon>icon.png</PackageIcon>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
-	<Version>2025.12.08</Version>
+	<Version>2026.1.29</Version>
 	<IsPackable>true</IsPackable>
 	<AotAssemblies>true</AotAssemblies>
   </PropertyGroup>
