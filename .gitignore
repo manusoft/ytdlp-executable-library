@@ -363,3 +363,5 @@ MigrationBackup/
 FodyWeavers.xsd
 /ytdlp.executable/Tools/yt-dlp.exe
 /ytdlp.executable/Tools/yt-dlp.exe
+/src/ytdlp.executable/Tools/yt-dlp.exe
+/src/Ytdlp.Stable.Build/Tools/yt-dlp.exe
