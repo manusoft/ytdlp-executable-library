@@ -12,7 +12,7 @@
 	<Authors>Manojbabu</Authors>
 	<PackageTags>yt-dlp;yt-dlp.exe;ytdlp;ytdlp.exe,stable</PackageTags>
 	<PackageProjectUrl>https://github.com/yt-dlp/yt-dlp</PackageProjectUrl>
-	<RepositoryUrl>https://github.com/manusoft/ytdlp-executable-library</RepositoryUrl>
+	<RepositoryUrl>https://github.com/manusoft/Ytdlp-Build</RepositoryUrl>
 	<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
 	<Icon>icon.png</Icon>
 	<PackageIcon>icon.png</PackageIcon>
