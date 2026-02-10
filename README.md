@@ -1,44 +1,130 @@
-![Static Badge](https://img.shields.io/badge/Ytdlp.Stable.Build-red) ![NuGet Version](https://img.shields.io/nuget/v/Ytdlp.Stable.Build)  ![NuGet Downloads](https://img.shields.io/nuget/dt/Ytdlp.Stable.Build)
+![Static Badge](https://img.shields.io/badge/Ytdlp.Stable.Build-red)
+![NuGet Version](https://img.shields.io/nuget/v/Ytdlp.Stable.Build)
+![NuGet Downloads](https://img.shields.io/nuget/dt/Ytdlp.Stable.Build)
 
-# Ytdlp.Stable.Build
+![Static Badge](https://img.shields.io/badge/Ytdlp.FFmpeg.Build-blue)
+![NuGet Version](https://img.shields.io/nuget/v/Ytdlp.FFmpeg.Build)
+![NuGet Downloads](https://img.shields.io/nuget/dt/Ytdlp.FFmpeg.Build)
 
-**Ytdlp.Stable.Build** is a NuGet package that includes the latest version of `yt-dlp.exe`. It is designed to complement the **ytdlp-executable** library and **Ytdlp.NET** library or any other application that requires the `yt-dlp` executable for powerful media downloading capabilities.  
+![Static Badge](https://img.shields.io/badge/Ytdlp.FFprobe.Build-green)
+![NuGet Version](https://img.shields.io/nuget/v/Ytdlp.FFprobe.Build)
+![NuGet Downloads](https://img.shields.io/nuget/dt/Ytdlp.FFprobe.Build)
 
-## Features  
-- **Latest Version**: Always ships with the latest version of `yt-dlp.exe`.  
-- **Standalone Package**: Provides only the `yt-dlp.exe` binary for easy integration.  
-- **Complementary**: Works perfectly with the **YTDLP-Wrapper** library.  
+---
 
-## File Path
-The file is copied to the output directory, and located at the relative path: ```Tools\yt-dlp.exe```
+# Ytdlp.Builds
 
-## Supported Sites
-- [Thousands of sites](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md)
+**Ytdlp.Builds** is a collection of NuGet packages that provide **prebuilt executables required by yt-dlp**, packaged for easy use in **.NET applications**.
 
-## Unlicense license
-``` text
-This is free and unencumbered software released into the public domain.
+This repository exists to eliminate the need for manual downloads, PATH configuration, or external installers when working with **yt-dlp**, FFmpeg, and FFprobe.
 
-Anyone is free to copy, modify, publish, use, compile, sell, or
-distribute this software, either in source code form or as a compiled
-binary, for any purpose, commercial or non-commercial, and by any
-means.
+All binaries are redistributed **unmodified** and placed in the `Tools` directory for predictable access.
 
-In jurisdictions that recognize copyright laws, the author or authors
-of this software dedicate any and all copyright interest in the
-software to the public domain. We make this dedication for the benefit
-of the public at large and to the detriment of our heirs and
-successors. We intend this dedication to be an overt act of
-relinquishment in perpetuity of all present and future rights to this
-software under copyright law.
+---
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
+## 📦 Available Packages
 
-For more information, please refer to <http://unlicense.org/>
+### 🔴 Ytdlp.Stable.Build
+
+Provides the **latest stable `yt-dlp.exe`** as a NuGet package.
+
+* Ships with the latest official yt-dlp release
+* Designed to complement **Ytdlp.NET**, **YTDLP-Wrapper**, or any custom integration
+* Ideal for desktop apps, automation, and CI/CD pipelines
+
+**Executable path:**
+
 ```
+Tools\yt-dlp.exe
+```
+
+---
+
+### 🔵 Ytdlp.FFmpeg.Build
+
+Provides the **FFmpeg executable** required by yt-dlp for media post-processing.
+
+* Enables audio/video merging and conversion
+* No system-wide FFmpeg installation required
+* Optimized for use with yt-dlp
+
+**Executable path:**
+
+```
+Tools\ffmpeg.exe
+```
+
+---
+
+### 🟢 Ytdlp.FFprobe.Build
+
+Provides the **FFprobe executable** used for media inspection and metadata analysis.
+
+* Used internally by yt-dlp and FFmpeg
+* Required for certain post-processing workflows
+
+**Executable path:**
+
+```
+Tools\ffprobe.exe
+```
+
+---
+
+## ✨ Features
+
+* Latest stable binaries for yt-dlp, FFmpeg, and FFprobe
+* Standalone NuGet packages — install only what you need
+* Clean, predictable `Tools` directory layout
+* No installers, no PATH configuration
+* Works with any .NET application or wrapper library
+
+---
+
+## 🔗 Supported Sites
+
+yt-dlp supports **thousands of websites**:
+
+👉 [https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md)
+
+---
+
+## 📜 License & Attribution
+
+### This repository
+
+The NuGet packaging logic and metadata are licensed under the **MIT License**.
+
+### Third-party software
+
+This repository redistributes **unmodified third-party binaries**:
+
+* **yt-dlp**
+  Licensed under the **Unlicense**
+  [https://github.com/yt-dlp/yt-dlp](https://github.com/yt-dlp/yt-dlp)
+
+* **FFmpeg / FFprobe**
+  Licensed under **LGPL or GPL**, depending on build configuration
+  [https://ffmpeg.org](https://ffmpeg.org)
+
+This project is **not affiliated with or endorsed by** the yt-dlp or FFmpeg projects.
+
+---
+
+## 🧠 Versioning
+
+Each NuGet package is **versioned independently** and follows the version of the tool it ships.
+
+Packaging-only changes may use an additional revision number when required.
+
+---
+
+## ⭐ Why Ytdlp.Builds?
+
+Because using yt-dlp in .NET should be as simple as:
+
+```
+dotnet add package Ytdlp.Stable.Build
+```
+
+No extra downloads. No environment setup. Just works.
