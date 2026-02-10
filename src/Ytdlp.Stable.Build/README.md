@@ -1,44 +1,72 @@
-![Static Badge](https://img.shields.io/badge/Ytdlp.Stable.Build-red) ![NuGet Version](https://img.shields.io/nuget/v/Ytdlp.Stable.Build)  ![NuGet Downloads](https://img.shields.io/nuget/dt/Ytdlp.Stable.Build)
+﻿![Static Badge](https://img.shields.io/badge/Ytdlp.Stable.Build-red) ![NuGet Version](https://img.shields.io/nuget/v/Ytdlp.Stable.Build)  ![NuGet Downloads](https://img.shields.io/nuget/dt/Ytdlp.Stable.Build)
 
 # Ytdlp.Stable.Build 
 
-**Ytdlp.Stable.Build** is a NuGet package that includes the latest version of `yt-dlp.exe`. It is designed to complement the **YTDLP-Wrapper** library and **Ytdlp.NET** library or any other application that requires the `yt-dlp` executable for powerful media downloading capabilities.  
+**Ytdlp.Stable.Build** provides the **latest stable yt-dlp executable** bundled as a NuGet package for use in **.NET applications**.
 
-## Features  
-- **Latest Version**: Always ships with the latest version of `yt-dlp.exe`.  
-- **Standalone Package**: Provides only the `yt-dlp.exe` binary for easy integration.  
-- **Complementary**: Works perfectly with the **YTDLP-Wrapper** library.  
+This package is intended for developers who want to use **yt-dlp without requiring a system-wide installation**, making it ideal for desktop apps, CI/CD pipelines, and self-contained deployments.
 
-## File Path
-The file is copied to the output directory, and located at the relative path: ```Tools\yt-dlp.exe.```
+The yt-dlp binary is included in the package and placed in the ```Tools``` directory.
 
-## Supported Sites
-- [Thousands of sites](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md)
+## ✨ Features  
+- Latest stable **yt-dlp executable**
+- No external yt-dlp installation required
+- Simple integration with .NET projects
+- Works seamlessly with FFmpeg / FFprobe companion packages
+- Suitable for Windows desktop, automation, and build pipelines
 
-## Unlicense license
-``` text
-This is free and unencumbered software released into the public domain.
+## 📦 Package Contents
 
-Anyone is free to copy, modify, publish, use, compile, sell, or
-distribute this software, either in source code form or as a compiled
-binary, for any purpose, commercial or non-commercial, and by any
-means.
-
-In jurisdictions that recognize copyright laws, the author or authors
-of this software dedicate any and all copyright interest in the
-software to the public domain. We make this dedication for the benefit
-of the public at large and to the detriment of our heirs and
-successors. We intend this dedication to be an overt act of
-relinquishment in perpetuity of all present and future rights to this
-software under copyright law.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
-
-For more information, please refer to <http://unlicense.org/>
+```bash
+Tools/
+ └─ yt-dlp.exe
 ```
+
+## 🚀 Usage
+yt-dlp can be executed directly from the tools directory or copied to your application’s output folder at build time.
+
+Example command-line usage:
+
+```bash
+yt-dlp https://www.youtube.com/watch?v=VIDEO_ID
+```
+
+When using FFmpeg for post-processing, pair this package with:
+- **Ytdlp.FFmpeg.Build** – FFmpeg executable for post-processing
+- **Ytdlp.FFprobe.Build** – FFprobe executable for media inspection
+
+## ⚠ Disclaimer
+
+This package redistributes the official, unmodified yt-dlp executable.
+- yt-dlp is a **third-party project**
+- This package is **not affiliated with or endorsed by the yt-dlp project**
+- No modifications are made to the original binary
+
+## 📜 License & Attribution
+
+### This package
+The packaging logic and metadata are licensed under the **MIT License**.
+
+### yt-dlp
+yt-dlp is licensed under the Unlicense.
+
+[Project website](https://github.com/yt-dlp/yt-dlp/)
+
+## 🧠 Versioning
+The NuGet package version follows the yt-dlp release version.
+
+Packaging-only updates may use an additional revision number when required.
+
+Example:- yt-dlp.exe v2026.2.4 - Ytdlp.Stable.Build v6.2.4
+
+## ⭐ Why this package?
+
+Because sometimes you just want:
+- dotnet restore
+- run yt-dlp
+- done 😄
+
+No installers. No PATH issues. No surprises.
+
+##  Supported Sites
+- [Thousands of sites](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md)
