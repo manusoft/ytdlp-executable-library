@@ -365,3 +365,7 @@ FodyWeavers.xsd
 /ytdlp.executable/Tools/yt-dlp.exe
 /src/ytdlp.executable/Tools/yt-dlp.exe
 /src/Ytdlp.Stable.Build/Tools/yt-dlp.exe
+/src/Ytdlp.Stable.Build/Tools/yt-dlp.exe
+/src/Ytdlp.FFmpeg.Build/Tools/ffmpeg.exe
+/src/Ytdlp.FFprobe.Build/Tools/ffmpeg.exe
+/src/Ytdlp.FFprobe.Build/Tools/ffprobe.exe
