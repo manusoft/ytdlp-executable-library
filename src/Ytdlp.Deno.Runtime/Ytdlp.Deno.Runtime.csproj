@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<LangVersion>latest</LangVersion>
+		<AssemblyName>Ytdlp.Deno.Runtime</AssemblyName>
+		<RootNamespace>Ytdlp.Deno.Runtime</RootNamespace>
+		<PackageId>Ytdlp.Deno.Runtime</PackageId>
+		<Description>A NuGet package that provides the latest version of `deno.exe`.</Description>
+		<Copyright>Copyright © 2026 ManuHub</Copyright>
+		<Authors>Manojbabu</Authors>
+		<PackageTags>yt-dlp;deno;deno.exe;runtime;javascript;youtube;youtube-dl;external-runtime</PackageTags>
+		<PackageProjectUrl>https://github.com/denoland/deno</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/manusoft/Ytdlp-Builds</RepositoryUrl>
+		<PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+		<Icon>icon.png</Icon>
+		<PackageIcon>icon.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<Version>2.6.9</Version>
+		<IsPackable>true</IsPackable>
+		<DevelopmentDependency>true</DevelopmentDependency>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Content Include="icon.png" Pack="true" PackagePath="" />
+		<Content Include="README.md" Pack="true" PackagePath="" />
+		<Content Include="LICENSE.txt" Pack="true" PackagePath="" />
+		<Content Include="Tools\deno.exe" Pack="true" PackageCopyToOutput="true">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+</Project>

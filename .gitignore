@@ -369,3 +369,4 @@ FodyWeavers.xsd
 /src/Ytdlp.FFmpeg.Build/Tools/ffmpeg.exe
 /src/Ytdlp.FFprobe.Build/Tools/ffmpeg.exe
 /src/Ytdlp.FFprobe.Build/Tools/ffprobe.exe
+/src/Ytdlp.Deno.Runtime/Tools/deno.exe
