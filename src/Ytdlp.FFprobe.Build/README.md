@@ -6,7 +6,7 @@
 
 **FFprobe** is often used internally by **yt-dlp** to analyze audio/video streams during post-processing.
 
-This package is designed to complement the YTDLP-Wrapper library and Ytdlp.NET library or developers who want zero-setup media processing when using **yt-dlp** in .NET applications. The **FFprobe** binary is included in the NuGet package and placed in the tools directory for easy access at build or runtime.
+This package is designed to complement the **YTDLP-Wrapper** library and **Ytdlp.NET** library or developers who want zero-setup media processing when using **yt-dlp** in .NET applications. The **FFprobe** binary is included in the NuGet package and placed in the tools directory for easy access at build or runtime.
 
 ## ✨ Features  
 - Precompiled **FFprobe executable** 
@@ -32,7 +32,7 @@ In .NET projects, you can reference the ```tools``` directory at runtime or copy
 
 ## 🔗 Related Packages
 - **Ytdlp.Stable.Build** – Latest yt-dlp executable
-- **Ytdlp.FFmpeg.Build** – FFmpeg executable for post-processing
+- **Ytdlp.FFmpeg.Build** – Patched FFmpeg for post-processing
 
 ## ⚠ Disclaimer
 This package does not modify **FFprobe** in any way.

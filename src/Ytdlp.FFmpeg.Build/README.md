@@ -4,7 +4,7 @@
 
 **Ytdlp.FFmpeg.Build** provides a **prebuilt FFmpeg executable** bundled specifically for use with **yt-dlp**.
 
-This package is designed to complement the YTDLP-Wrapper library and Ytdlp.NET library or developers who want zero-setup media processing when using **yt-dlp** in .NET applications. The **FFmpeg** binary is included in the NuGet package and placed in the tools directory for easy access at build or runtime.
+This package is designed to complement the **YTDLP-Wrapper** library and **Ytdlp.NET** library or developers who want zero-setup media processing when using **yt-dlp** in .NET applications. The **FFmpeg** binary is included in the NuGet package and placed in the tools directory for easy access at build or runtime.
 
 ## ✨ Features  
 - Precompiled **FFmpeg executable** 
@@ -30,7 +30,7 @@ In .NET projects, you can reference the ```tools``` directory at runtime or copy
 
 ## 🔗 Related Packages
 - **Ytdlp.Stable.Build** – Latest yt-dlp executable
-- **Ytdlp.FFprobe.Build** – FFprobe executable for media inspection
+- **Ytdlp.FFprobe.Build** – Patched FFprobe for media inspection
 
 ## ⚠ Disclaimer
 This package does not modify **FFmpeg** in any way.

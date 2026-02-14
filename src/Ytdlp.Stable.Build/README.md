@@ -32,8 +32,8 @@ yt-dlp https://www.youtube.com/watch?v=VIDEO_ID
 ```
 
 When using FFmpeg for post-processing, pair this package with:
-- **Ytdlp.FFmpeg.Build** – FFmpeg executable for post-processing
-- **Ytdlp.FFprobe.Build** – FFprobe executable for media inspection
+- **Ytdlp.FFmpeg.Build** – Patched FFmpeg for post-processing
+- **Ytdlp.FFprobe.Build** – Patched FFprobe for media inspection
 
 ## ⚠ Disclaimer
 
