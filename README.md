@@ -10,13 +10,21 @@
 ![NuGet Version](https://img.shields.io/nuget/v/Ytdlp.FFprobe.Build)
 ![NuGet Downloads](https://img.shields.io/nuget/dt/Ytdlp.FFprobe.Build)
 
+![Static Badge](https://img.shields.io/badge/Ytdlp.Deno.Runtime-orange)
+![NuGet Version](https://img.shields.io/nuget/v/Ytdlp.Deno.Runtime)
+![NuGet Downloads](https://img.shields.io/nuget/dt/Ytdlp.Deno.Runtime)
+
+![Static Badge](https://img.shields.io/badge/Ytdlp.Excecutable-black)
+![NuGet Version](https://img.shields.io/nuget/v/ytdlp-executable)
+![NuGet Downloads](https://img.shields.io/nuget/dt/ytdlp-executable)
+
 ---
 
 # Ytdlp.Builds
 
 **Ytdlp.Builds** is a collection of NuGet packages that provide **prebuilt executables required by yt-dlp**, packaged for easy use in **.NET applications**.
 
-This repository exists to eliminate the need for manual downloads, PATH configuration, or external installers when working with **yt-dlp**, FFmpeg, and FFprobe.
+This repository exists to eliminate the need for manual downloads, PATH configuration, or external installers when working with **yt-dlp**, FFmpeg, and FFprobe, and the required JavaScript runtime (Deno).
 
 All binaries are redistributed **unmodified** and placed in the `Tools` directory for predictable access.
 
@@ -44,7 +52,7 @@ Tools\yt-dlp.exe
 
 Provides the **FFmpeg executable** required by yt-dlp for media post-processing.
 
-* Enables audio/video merging and conversion
+* Enables audio/video merging and conversion, and format handling
 * No system-wide FFmpeg installation required
 * Optimized for use with yt-dlp
 
@@ -71,13 +79,41 @@ Tools\ffprobe.exe
 
 ---
 
+
+### 🟠 Ytdlp.Deno.Runtime
+Provides the official **deno.exe** (Windows x64) — the recommended JavaScript runtime for yt-dlp.
+
+- Required since yt-dlp 2025.11.12+ for YouTube signature extraction & JS challenges
+- Official stable binary from denoland/deno (unmodified)
+- Deno is yt-dlp's **default and highest-priority** external runtime
+- No global Deno installation needed
+
+**Executable path:**
+
+```
+Tools\deno.exe
+```
+
+---
+
+
+### ⚫ Ytdlp.Executable
+(Alternative / legacy package name – provides `yt-dlp.exe` in a different layout)
+
+**Executable path:**
+```
+Tools\yt-dlp.exe
+```
+
+
 ## ✨ Features
 
-* Latest stable binaries for yt-dlp, FFmpeg, and FFprobe
+* Latest stable binaries for yt-dlp, FFmpeg, FFprobe, and Deno
 * Standalone NuGet packages — install only what you need
 * Clean, predictable `Tools` directory layout
 * No installers, no PATH configuration
 * Works with any .NET application or wrapper library
+* Self-contained setup for full yt-dlp functionality (including YouTube)
 
 ---
 
@@ -107,13 +143,17 @@ This repository redistributes **unmodified third-party binaries**:
   Licensed under **LGPL or GPL**, depending on build configuration
   [https://ffmpeg.org](https://ffmpeg.org)
 
-This project is **not affiliated with or endorsed by** the yt-dlp or FFmpeg projects.
+* **Deno**  
+  Licensed under the **MIT License**  
+  [https://deno.com](https://deno.com) • [https://github.com/denoland/deno](https://github.com/denoland/deno)
+
+This project is **not affiliated with or endorsed by** the yt-dlp, FFmpeg, or Deno projects.
 
 ---
 
 ## 🧠 Versioning
 
-Each NuGet package is **versioned independently** and follows the version of the tool it ships.
+Each NuGet package is **versioned independently** and follows (or closely tracks) the version of the tool it ships.
 
 Packaging-only changes may use an additional revision number when required.
 
@@ -123,8 +163,21 @@ Packaging-only changes may use an additional revision number when required.
 
 Because using yt-dlp in .NET should be as simple as:
 
-```
+```bash
 dotnet add package Ytdlp.Stable.Build
+dotnet add package Ytdlp.FFmpeg.Build
+dotnet add package Ytdlp.FFprobe.Build
+dotnet add package Ytdlp.Deno.Runtime
 ```
 
 No extra downloads. No environment setup. Just works.
+
+
+### Notes on this version
+
+- Added **Ytdlp.Deno.Runtime** with orange badge (common color for JS-related tools, contrasts nicely)
+- Included a short explanation why Deno is needed (YouTube JS challenges)
+- Kept the color coding consistent with your earlier badges
+- Mentioned that all binaries are unmodified
+- Included the legacy `Ytdlp.Executable` package (assuming it's still published)
+- Added Deno license attribution
